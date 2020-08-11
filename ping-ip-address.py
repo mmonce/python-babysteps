@@ -1,12 +1,13 @@
 import os
 import sys
 
-ipAddress = str(sys.argv[1])
 
-print(ipAddress)
 
 #DEFINITION OF PING FUNCTION
 def check_ping():
+    ipAddress = str(sys.argv[1])
+    print("Pinging Host at: " + ipAddress)
+
     hostname = ipAddress
     response = os.system("ping -c 1 " + hostname)
     # and then check the response...
