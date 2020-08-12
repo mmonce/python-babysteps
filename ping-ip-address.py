@@ -23,3 +23,8 @@ pingstatus = check_ping()
 
 print (pingstatus)
 
+#WRITE PINGSTATUS TO A NEW FILE THAT CAN BE STORED AS AN ENV VARIABLE I THE LINUX SHELL AND BOUND TO OUTPUT
+pythonoutputfile = open("ping_ip_output.txt","a+")
+pythonoutputfile.write(pingstatus)
+pythonoutputfile.close
+
