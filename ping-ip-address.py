@@ -20,9 +20,6 @@ def check_ping():
 #EXECUTE PING TEST
 pingstatus = check_ping()
  
-f = open("OUTPUT_RESULTS_FILE.txt","w+")
-f.write(pingstatus)
-f.close
 
 print (pingstatus)
 

@@ -1,0 +1,198 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Monaco;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red22\green21\blue22;\red255\green255\blue255;\red246\green246\blue246;
+\red78\green77\blue78;\red22\green21\blue22;\red18\green79\blue146;\red29\green136\blue198;\red22\green21\blue22;
+\red115\green115\blue115;\red234\green234\blue234;}
+{\*\expandedcolortbl;;\cssrgb\c11373\c10980\c11373;\cssrgb\c100000\c100000\c100000;\cssrgb\c97255\c97255\c97255;
+\cssrgb\c38039\c37647\c38039;\cssrgb\c11373\c10980\c11373\c70196;\cssrgb\c7059\c39216\c63922;\cssrgb\c11373\c60784\c81961\c10196;\cssrgb\c11373\c10980\c11373\c3922;
+\cssrgb\c52549\c52549\c52549;\cssrgb\c93333\c93333\c93333;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WAALB8319"}}{\fldrslt 
+\f1\b \cf2 \cb4 Jim McMahon II}}\cb4 \'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595438439420100"}}{\fldrslt 
+\fs24 \cf5 \strokec5 Jul 22nd at 12:20 PM}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb4 team is there a way to get a value into an output parameter via a script? For instance I am running a powershell script which runs a function to get a bearer token then returns the result which is the token. I want to return the value back to a code stream variable to i can use it. What I currently see is the return shows up in "logs." However, logs is an array so when I try to pass it to a token variable for the next command it passes the full array and not just the data within it.\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\fs26 \cf6 \cb3 \strokec6 10 replies\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs30 \cf2 \strokec2 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WAAGJM1AQ"}}{\fldrslt 
+\f1\b \cf2 \cb3 Bhawesh Ranjan}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595484759427700?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 20 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/team/WABLCA030"}}{\fldrslt \cf7 \cb8 \strokec7 \uc0\u8234 @apriyank}}\cb3 \uc0\u8234 \'a0^^\cb1 \uc0\u8236 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WABLCA030"}}{\fldrslt 
+\f1\b \cf2 \cb3 Priyank Agarwal}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595512053440600?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 20 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 you can save the value as\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf2 \cb9 echo BEARER_TOKEN > $SCRIPT_RESPONSE_FILE \
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\fs30 \cf2 \cb1 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WABLCA030"}}{\fldrslt 
+\f1\b \cf2 \cb3 Priyank Agarwal}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595512062440800?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 20 days ago}}\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf2 \cb9 And use it as ----------------------------- $\{Stage0.Task0.output.response\}\
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\fs30 \cf2 \cb1 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WABLCA030"}}{\fldrslt 
+\f1\b \cf2 \cb3 Priyank Agarwal}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595512093441000?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 20 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 If u have a map like\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf2 \cb9 echo "\{'abc':'{\field{\*\fldinst{HYPERLINK "https://www.google.com/"}}{\fldrslt https://www.google.com}}'\}" > $SCRIPT_RESPONSE_FILE \
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\fs30 \cf2 \cb3 use it as\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf2 \cb9 ----------------------------- $\{Stage0.Task0.output.response.abc\}\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f0\fs26 \cf10 \cb3 \strokec10 \uc0\u8234 (edited)
+\fs30 \cf2 \cb1 \strokec2 \uc0\u8236 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WABLCA030"}}{\fldrslt 
+\f1\b \cf2 \cb3 Priyank Agarwal}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595512138441300?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 20 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 If u have an array like\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf2 \cb9 echo "['{\field{\*\fldinst{HYPERLINK "https://www.google.com/"}}{\fldrslt https://www.google.com}}','{\field{\*\fldinst{HYPERLINK "https://www.vmware.com/"}}{\fldrslt https://www.vmware.com}}']" > $SCRIPT_RESPONSE_FILE \
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\fs30 \cf2 \cb3 use it as\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf2 \cb9 $\{Stage0.Task0.output.response[0]\}\
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\fs30 \cf2 \cb1 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WAALB8319"}}{\fldrslt 
+\f1\b \cf2 \cb3 Jim McMahon II}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595514095441700?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 20 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 oh that is awesome\'a0 thank you Priyank!\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WAALB8319"}}{\fldrslt 
+\f1\b \cf2 \cb3 Jim McMahon II}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595537198446400?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 19 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 Hi\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/team/WABLCA030"}}{\fldrslt \cf7 \cb8 \strokec7 \uc0\u8234 @apriyank}}\'a0i got the response working but getting back the script itself in the response\cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\fs26 \cf6 \cb3 \strokec6 image.png
+\fs30 \'a0\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://files.slack.com/files-pri/T8YCM8N9L-F017N30R3GB/image.png"}}{\fldrslt \cf7 \strokec7 \
+\
+}}\pard\pardeftab720\sl380\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://files.slack.com/files-pri/T8YCM8N9L-F017N30R3GB/download/image.png"}}{\fldrslt 
+\f3\i\b\fs26 \cf2 \strokec2 \
+}}\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\i\b\fs26 \cf2 \strokec2 \
+\
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\i0\b0\fs30 \cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb11 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WAALB8319"}}{\fldrslt 
+\f1\b \cf2 \cb3 Jim McMahon II}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595537250446800?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 19 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 This is my script format. Is this correct?\cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\fs26 \cf6 \cb3 \strokec6 image.png
+\fs30 \'a0\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://files.slack.com/files-pri/T8YCM8N9L-F017F4XF84W/image.png"}}{\fldrslt \cf7 \strokec7 \
+\
+}}\pard\pardeftab720\sl380\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://files.slack.com/files-pri/T8YCM8N9L-F017F4XF84W/download/image.png"}}{\fldrslt 
+\f3\i\b\fs26 \cf2 \strokec2 \
+}}
+\f3\i\b\fs26 \cf2 \strokec2 \
+\
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\i0\b0\fs30 \cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb11 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WABLCA030"}}{\fldrslt 
+\f1\b \cf2 \cb3 Priyank Agarwal}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595566619447600?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 19 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 try the command in powershell on host. If after running that, u have expected value in $SCRIPT_RESPONSE_FILE variable, then it should have worked. Try printing that variable after running the command\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl440\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://app.slack.com/team/WAALB8319"}}{\fldrslt 
+\f1\b \cf2 \cb3 Jim McMahon II}}\cb3 \'a0\'a0{\field{\*\fldinst{HYPERLINK "https://vmware.slack.com/archives/C6P75BUJU/p1595598870451400?thread_ts=1595438439.420100&cid=C6P75BUJU"}}{\fldrslt 
+\fs24 \cf5 \strokec5 19 days ago}}\cb1 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf2 \cb3 the command itself works on the host returning the token as expected but when i run it in the format above the script file variable receives the script command as the data not the result of the script\cb1 \
+}
