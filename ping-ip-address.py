@@ -12,9 +12,9 @@ def check_ping():
     response = os.system("ping -c 1 " + hostname)
     # and then check the response...
     if response == 0:
-        pingstatus = "Network-Active"
+        pingstatus = "Active"
     else:
-        pingstatus = "Network-Error"
+        pingstatus = "Error"
     return pingstatus
 
 #EXECUTE PING TEST
