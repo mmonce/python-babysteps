@@ -13,7 +13,7 @@ import urllib3
 # You must first get an API key from the vRA Cloud Console
 # simple string variables can be used
 vracloudurlbase = "https://api.mgmt.cloud.vmware.com"
-apikey = "7L5DrmFNID7fEuOy0txXJuY32rD7sYvyyxCbpmotknuoaezwSCRTdyKq260taj7j"
+apikey = ""
 
 #---------------------------------------
 # ALL PURPOSE JSON-PARSER FUNCTION
